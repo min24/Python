@@ -1,15 +1,26 @@
-import numpy as np
+import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
+import numpy as np
 from sklearn.cluster import KMeans
-from sklearn.neighbors import NearestNeighbors
-from sklearn.preprocessing import normalize
-from mnist.loader import MNIST
-from display_network import *
 import imp
+img = mpimg.imread('../asset/girl3.jpg')
+plt.imshow(img)
+imgplot = plt.imshow(img)
+plt.axis('off')
+plt.show()
 
-mndata = MNIST('./MNIST/') # path to folder MNIST
-mndata.load_testing()
-X = mndata.test_images
+X = img.reshape((img.shape[0]*img.shape[1], img.shape[2]))
 
-kmeans = KMeans(n_clusters=K).fit(X)
-pred_label = kmeans.predict(X)
+for K in [5, 10, 15, 20]:
+    kmeans = KMeans(n_clusters=K).fit(X)
+    label = kmeans.predict(X)
+
+    img4 = np.zeros_like(X)
+    # replace each pixel by its center
+    for k in range(K):
+        img4[label == k] = kmeans.cluster_centers_[k]
+    # reshape and display output image
+    img5 = img4.reshape((img.shape[0], img.shape[1], img.shape[2]))
+    plt.imshow(img5, interpolation='nearest')
+    plt.axis('off')
+    plt.show()
