@@ -1,8 +1,3 @@
-,cars_per_cap,country,drives_right
-US,809,United States,True
-AUS,731,Australia,False
-JAP,588,Japan,False
-IN,18,India,False
-RU,200,Russia,True
-MOR,70,Morocco,True
-EG,45,Egypt,True
+version https://git-lfs.github.com/spec/v1
+oid sha256:df8de65c5d29cd2b092db344ba1603568a996951ef660def19ee847f60157f47
+size 179
