@@ -1,0 +1,3 @@
+https://cocodataset.org/?fbclid=IwAR2ZnQJxR2FkaosNKOkMi86GJaqdb3uEcIcrLWosQLR5G1XrEg2cqn3n2F4#explore
+http://academictorrents.com/browse.php?search=imagenet&c6=1&fbclid=IwAR3bPq70tghp4HzDI_NIHCh1bpBMiU3yrh0MfHleg0WVZzifnFOMzHtkhXg
+https://storage.googleapis.com/openimages/web/visualizer/index.html?set=train&fbclid=IwAR2iTB7uogKDrjhqR7r9Ar5YZzfQ9ulbyigx9aPV1Cz47UeAyoKPiBRkpT4&c=%2Fm%2F01dws
